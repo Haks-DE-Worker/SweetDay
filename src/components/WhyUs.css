@@ -1,0 +1,119 @@
+.why-us {
+  background: linear-gradient(180deg, var(--color-cream) 0%, var(--color-rose) 100%);
+}
+
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.reason-card {
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  transition: var(--transition);
+  border: 2px solid transparent;
+}
+
+.reason-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-primary);
+}
+
+.reason-emoji {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.reason-title {
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.reason-description {
+  color: var(--color-text-light);
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.why-us-guarantee {
+  display: flex;
+  justify-content: center;
+}
+
+.guarantee-box {
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  color: white;
+  padding: 3rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 800px;
+  width: 100%;
+}
+
+.guarantee-icon {
+  font-size: 5rem;
+  flex-shrink: 0;
+}
+
+.guarantee-content h3 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.guarantee-content p {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.guarantee-content strong {
+  color: white;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+@media (max-width: 768px) {
+  .reasons-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .reason-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .reason-emoji {
+    font-size: 3.5rem;
+  }
+
+  .guarantee-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 2.5rem 2rem;
+  }
+
+  .guarantee-icon {
+    font-size: 4rem;
+  }
+
+  .guarantee-content h3 {
+    font-size: 1.75rem;
+  }
+
+  .guarantee-content p {
+    font-size: 1rem;
+  }
+}

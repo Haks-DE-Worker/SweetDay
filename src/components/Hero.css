@@ -1,0 +1,238 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 2rem 0;
+  background: linear-gradient(135deg, #FFE4E9 0%, #FFF5E6 50%, #FFEAA7 100%);
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hero-decoration {
+  position: absolute;
+  font-size: 4rem;
+  opacity: 0.15;
+  animation: float 6s ease-in-out infinite;
+}
+
+.decoration-1 {
+  top: 10%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.decoration-2 {
+  top: 20%;
+  right: 15%;
+  animation-delay: 1s;
+}
+
+.decoration-3 {
+  bottom: 20%;
+  left: 15%;
+  animation-delay: 2s;
+}
+
+.decoration-4 {
+  bottom: 15%;
+  right: 10%;
+  animation-delay: 1.5s;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 2rem;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.badge-emoji {
+  font-size: 1.25rem;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.badge-text {
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+.hero-title {
+  margin-bottom: 1.5rem;
+  color: var(--color-text);
+  font-weight: 800;
+}
+
+.hero-highlight {
+  color: var(--color-primary);
+  position: relative;
+  display: inline-block;
+}
+
+.hero-subtitle {
+  font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+  color: var(--color-text-light);
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+}
+
+.hero-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.btn-hero {
+  font-size: clamp(1.1rem, 2.5vw, 1.25rem);
+  padding: 1.25rem 3rem;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.hero-trust {
+  text-align: center;
+}
+
+.trust-stars {
+  color: #FFC857;
+  font-size: 1.5rem;
+  letter-spacing: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.trust-text {
+  font-size: 0.95rem;
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+.hero-urgency {
+  margin-top: 2rem;
+}
+
+.urgency-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #FF6B9D 0%, #FF4081 100%);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  box-shadow: var(--shadow-md);
+}
+
+.urgency-badge strong {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.hero-image-section {
+  margin-top: 4rem;
+  position: relative;
+  z-index: 2;
+}
+
+.cake-showcase {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cake-card {
+  background: white;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  min-width: 150px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.cake-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: var(--shadow-lg);
+}
+
+.cake-emoji {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.cake-label {
+  display: block;
+  font-weight: 600;
+  color: var(--color-text);
+  font-size: 1.1rem;
+}
+
+.cake-1 {
+  animation-delay: 0.2s;
+}
+
+.cake-2 {
+  animation-delay: 0.4s;
+}
+
+.cake-3 {
+  animation-delay: 0.6s;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding: 4rem 0;
+  }
+
+  .hero-decoration {
+    font-size: 2.5rem;
+  }
+
+  .hero-cta {
+    width: 100%;
+  }
+
+  .btn-hero {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .cake-showcase {
+    gap: 1rem;
+  }
+
+  .cake-card {
+    min-width: 120px;
+    padding: 1.5rem;
+  }
+
+  .cake-emoji {
+    font-size: 3rem;
+  }
+}
